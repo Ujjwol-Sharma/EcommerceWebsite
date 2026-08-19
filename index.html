@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Biz – Online Shopping</title>
+    <meta name="description" content="Galaxy Biz - Your one-stop online shop for electronics, appliances, fashion and more. Shop laptops, phones, gaming, beauty products and household items.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <nav class="top-nav-left">
+                <a href="#">About Us</a>
+                <a href="#">Our Partners</a>
+                <a href="#">Work With Us</a>
+            </nav>
+            <nav class="top-nav-right">
+                <a href="#">Track Your Order</a>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="#" class="logo" id="logo">
+                <span class="logo-galaxy">Gal</span><span class="logo-axy">axy</span>
+                <span class="logo-sub">online.store</span>
+            </a>
+            <div class="search-bar" id="search-bar">
+                <input type="text" placeholder="Search for products" id="search-input">
+                <button class="search-btn" id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-right">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="#" class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <div>
+                        <span class="cart-total">0.00 ر.ع.</span>
+                        <span class="cart-count">0 items</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container nav-inner">
+            <ul class="nav-menu" id="main-menu">
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-laptop"></i> Electronics <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Mobile & Accessories</a></li>
+                        <li><a href="#">Laptops & Accessories</a></li>
+                        <li><a href="#">iPhone 17 Series</a></li>
+                        <li><a href="#">Gaming Essentials</a></li>
+                        <li><a href="#">Computer</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#">Beauty & Fragrance <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Makeup</a></li>
+                        <li><a href="#">Skincare</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Home & Kitchen</a></li>
+                <li><a href="#">Grocery</a></li>
+                <li><a href="#">Men's Fashion</a></li>
+                <li><a href="#">Women's Fashion</a></li>
+                <li><a href="#">Mom & Baby</a></li>
+                <li><a href="#">Toys</a></li>
+                <li><a href="#">Kid's Fashion</a></li>
+            </ul>
+            <div class="nav-right-actions">
+                <a href="admin.html" class="nav-action admin-link" style="color: var(--primary-color); font-weight: 700;"><i class="fas fa-user-shield"></i> Admin Panel</a>
+                <a href="#" class="nav-action" id="wishlist-btn"><i class="far fa-heart"></i> Wishlist</a>
+                <a href="#" class="nav-action" id="login-btn"><i class="far fa-user"></i> Login / Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <!-- Hero Slider -->
+                <div class="hero-slider" id="hero-slider">
+                    <div class="slide active" id="slide-1">
+                        <div class="slide-content">
+                            <span class="slide-subtitle">Fresh design in an elegant case</span>
+                            <h2 class="slide-title">Samsung Galaxy Flip5</h2>
+                            <a href="#" class="btn btn-outline">Buy Now</a>
+                        </div>
+                        <div class="slide-image">
+                            <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=500&h=500&fit=crop" alt="Samsung Galaxy Flip5">
+                        </div>
+                    </div>
+                    <div class="slide" id="slide-2">
+                        <div class="slide-content">
+                            <span class="slide-subtitle">Nordic inspiration for decor</span>
+                            <h2 class="slide-title">Inborn Nordic Chair</h2>
+                            <a href="#" class="btn btn-outline">Buy Now</a>
+                        </div>
+                        <div class="slide-image">
+                            <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&h=500&fit=crop" alt="Nordic Chair">
+                        </div>
+                    </div>
+                    <div class="slide" id="slide-3">
+                        <div class="slide-content">
+                            <span class="slide-subtitle">Midweek discounts!</span>
+                            <h2 class="slide-title">Redmi Buds 3</h2>
+                            <a href="#" class="btn btn-outline">To Shop</a>
+                        </div>
+                        <div class="slide-image">
+                            <img src="https://images.unsplash.com/photo-1590658268037-6bf12f032f55?w=500&h=500&fit=crop" alt="Redmi Buds">
+                        </div>
+                    </div>
+                    <button class="slider-arrow slider-next" id="slider-next"><i class="fas fa-chevron-right"></i></button>
+                    <button class="slider-arrow slider-prev" id="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                </div>
+
+                <!-- Washing Machine Banner -->
+                <div class="promo-banner washing-machine" id="washing-banner">
+                    <span class="promo-label">Special Offer</span>
+                    <h3 class="promo-title">Washing Machine</h3>
+                    <p class="promo-price">$799 Special Offer</p>
+                    <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=400&h=400&fit=crop" alt="Washing Machine">
+                </div>
+
+                <!-- Hot Categories -->
+                <div class="hot-categories" id="hot-categories">
+                    <h4><i class="fas fa-fire" style="color: #7c5cfc;"></i> Hot categories</h4>
+                    <div class="cat-grid">
+                        <a href="#" class="cat-item">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=80&h=80&fit=crop" alt="Computer">
+                            <span>Computer</span>
+                        </a>
+                        <a href="#" class="cat-item">
+                            <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=80&h=80&fit=crop" alt="Consoles">
+                            <span>Consoles</span>
+                        </a>
+                        <a href="#" class="cat-item">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=80&h=80&fit=crop" alt="Games">
+                            <span>Games</span>
+                        </a>
+                        <a href="#" class="cat-item">
+                            <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=80&h=80&fit=crop" alt="Washer dryers">
+                            <span>Washer dryers</span>
+                        </a>
+                        <a href="#" class="cat-item">
+                            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=80&h=80&fit=crop" alt="Business Laptop">
+                            <span>Business Laptop</span>
+                        </a>
+                        <a href="#" class="cat-item">
+                            <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=80&h=80&fit=crop" alt="Fridges">
+                            <span>Fridges</span>
+                        </a>
+                        <a href="#" class="cat-item">
+                            <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=80&h=80&fit=crop" alt="Gaming peripherals">
+                            <span>Gaming peripherals</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Pick of the Week -->
+        <section class="best-pick-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Best pick of the week</h3>
+                    <a href="#" class="shop-more">Shop More</a>
+                </div>
+                <div class="product-scroll" id="best-pick-scroll">
+                    <div class="product-mini-card">
+                        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=80&h=80&fit=crop" alt="MacBook Air">
+                        <div>
+                            <h5>Apple MacBook Air</h5>
+                            <span class="price">880.00 ر.ع.</span>
+                        </div>
+                    </div>
+                    <div class="product-mini-card">
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=80&h=80&fit=crop" alt="Oculus Quest">
+                        <div>
+                            <h5>Oculus Quest 2</h5>
+                            <span class="price-old">499.00 ر.ع.</span>
+                            <span class="price">449.00 ر.ع.</span>
+                        </div>
+                    </div>
+                    <div class="product-mini-card">
+                        <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=80&h=80&fit=crop" alt="PlayStation 5">
+                        <div>
+                            <h5>PlayStation 5</h5>
+                            <span class="price">800.00 ر.ع.</span>
+                        </div>
+                    </div>
+                    <div class="product-mini-card">
+                        <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=80&h=80&fit=crop" alt="SMEG FAB10">
+                        <div>
+                            <h5>SMEG FAB10HRBL5</h5>
+                            <span class="price">1,000.00 ر.ع.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Bar -->
+        <section class="features-bar">
+            <div class="container features-grid">
+                <div class="feature-item" id="feature-shipping">
+                    <i class="fas fa-map-marker-alt feature-icon"></i>
+                    <div>
+                        <strong>Fast, Free Shipping</strong>
+                        <span>On order over 20 ر.ع.</span>
+                    </div>
+                </div>
+                <div class="feature-item" id="feature-delivery">
+                    <i class="fas fa-cube feature-icon"></i>
+                    <div>
+                        <strong>Next Day Delivery</strong>
+                        <span>Free – spend over 40 ر.ع.</span>
+                    </div>
+                </div>
+                <div class="feature-item" id="feature-returns">
+                    <i class="fas fa-thumbs-up feature-icon"></i>
+                    <div>
+                        <strong>60-Day Free Returns</strong>
+                        <span>All shipping methods</span>
+                    </div>
+                </div>
+                <div class="feature-item" id="feature-service">
+                    <i class="fas fa-phone-alt feature-icon"></i>
+                    <div>
+                        <strong>Expert Customer Service</strong>
+                        <span>Choose chat or call us</span>
+                    </div>
+                </div>
+                <div class="feature-item" id="feature-brands">
+                    <i class="fas fa-heart feature-icon"></i>
+                    <div>
+                        <strong>Exclusive Brands</strong>
+                        <span>More exclusive products</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products & Recently Viewed -->
+        <section class="featured-section">
+            <div class="container featured-layout">
+                <!-- Recently Viewed Sidebar -->
+                <aside class="recently-viewed" id="recently-viewed">
+                    <h4>Recently viewed</h4>
+                    <div class="recent-item">
+                        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=70&h=70&fit=crop" alt="MacBook Air">
+                        <div>
+                            <span class="recent-cat">Apple MacBook</span>
+                            <span class="price">880.00 ر.ع.</span>
+                        </div>
+                    </div>
+                    <div class="recent-item">
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=70&h=70&fit=crop" alt="MacBook Pro M2">
+                        <div>
+                            <span class="recent-cat">Apple MacBook</span>
+                            <span class="price">1,299.00 – 1,499.00 ر.ع.</span>
+                        </div>
+                    </div>
+                    <div class="recent-item">
+                        <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=70&h=70&fit=crop" alt="MacBook Pro 16">
+                        <div>
+                            <span class="recent-cat">Apple MacBook</span>
+                            <span class="price">3,499.00 – 3,999.00 ر.ع.</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Featured Products -->
+                <div class="featured-products">
+                    <h3>Featured products</h3>
+                    <div class="product-tabs" id="product-tabs">
+                        <button class="tab active" data-tab="popular">Popular products</button>
+                        <button class="tab" data-tab="most-viewed">Most-viewed products</button>
+                        <button class="tab" data-tab="top-selling">Top selling</button>
+                    </div>
+                    <div class="products-grid" id="featured-products-grid">
+                        <div class="product-card" id="product-macbook-air">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=250&h=250&fit=crop" alt="MacBook Air M1">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                                    <button class="action-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <div class="color-options">
+                                <span class="color-dot" style="background:#d4956b;"></span>
+                                <span class="color-dot" style="background:#c0c0c0;"></span>
+                                <span class="color-dot" style="background:#333;"></span>
+                            </div>
+                            <h5><a href="#">Apple MacBook Air 13" M1</a></h5>
+                            <span class="product-cat">Apple MacBook</span>
+                            <span class="price">880.00 ر.ع.</span>
+                        </div>
+                        <div class="product-card" id="product-macbook-pro-m2">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=250&h=250&fit=crop" alt="MacBook Pro M2">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                                    <button class="action-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <div class="color-options">
+                                <span class="color-dot" style="background:#c0c0c0;"></span>
+                                <span class="color-dot" style="background:#333;"></span>
+                            </div>
+                            <h5><a href="#">Apple MacBook Pro 13" M2</a></h5>
+                            <span class="product-cat">Apple MacBook</span>
+                            <span class="price">1,299.00 – 1,499.00 ر.ع.</span>
+                        </div>
+                        <div class="product-card" id="product-macbook-pro-16-max">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=250&h=250&fit=crop" alt="MacBook Pro 16 M1 Max">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                                    <button class="action-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <div class="color-options">
+                                <span class="color-dot" style="background:#c0c0c0;"></span>
+                                <span class="color-dot" style="background:#333;"></span>
+                            </div>
+                            <h5><a href="#">Apple MacBook Pro 16″ M1 Max</a></h5>
+                            <span class="product-cat">Apple MacBook</span>
+                            <span class="price">3,499.00 – 3,999.00 ر.ع.</span>
+                        </div>
+                        <div class="product-card" id="product-macbook-pro-16-pro">
+                            <span class="badge hot">HOT</span>
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=250&h=250&fit=crop" alt="MacBook Pro 16 M1 Pro">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                                    <button class="action-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <h5><a href="#">Apple MacBook Pro 16″ M1 Pro</a></h5>
+                            <span class="product-cat">Apple MacBook</span>
+                            <span class="price">2,499.00 – 2,999.00 ر.ع.</span>
+                        </div>
+                        <div class="product-card" id="product-zenbook-oled">
+                            <span class="badge hot">HOT</span>
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=250&h=250&fit=crop" alt="ASUS ZenBook OLED">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Compare"><i class="fas fa-exchange-alt"></i></button>
+                                    <button class="action-btn" title="Quick View"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <h5><a href="#">ASUS ZenBook OLED 13</a></h5>
+                            <span class="product-cat">Business Laptop</span>
+                            <span class="price">1,600.00 ر.ع.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alby Urbanears + Product Row -->
+        <section class="urbanears-section">
+            <div class="container urbanears-layout">
+                <div class="urbanears-banner" id="urbanears-banner">
+                    <h3>Alby Urbanears</h3>
+                    <p>Get ready to impressive sound</p>
+                    <div class="urbanears-features">
+                        <div class="ub-feature">
+                            <i class="fas fa-headphones-alt"></i>
+                            <span>Play Time</span>
+                            <strong>15 Hours</strong>
+                        </div>
+                        <div class="ub-feature">
+                            <i class="fas fa-volume-mute"></i>
+                            <span>ANC</span>
+                            <strong>-48dB</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="appliance-products">
+                    <div class="product-card compact">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=200&h=200&fit=crop" alt="ASUS ZenBook Pro">
+                        </div>
+                        <h5><a href="#">ASUS ZenBook Pro 15 Flip</a></h5>
+                        <span class="product-cat">Ultrabook</span>
+                        <span class="price">2,320.00 ر.ع.</span>
+                    </div>
+                    <div class="product-card compact">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1585515320310-259814833e62?w=200&h=200&fit=crop" alt="Bamix">
+                        </div>
+                        <h5><a href="#">Bamix Luxurylin M200</a></h5>
+                        <span class="product-cat">Blenders</span>
+                        <span class="price">605.00 ر.ع.</span>
+                    </div>
+                    <div class="product-card compact">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=200&h=200&fit=crop" alt="Bosch Fridge">
+                        </div>
+                        <h5><a href="#">Bosch KUW20VHF0G</a></h5>
+                        <span class="product-cat">Fridges</span>
+                        <span class="price">745.00 ر.ع.</span>
+                    </div>
+                    <div class="product-card compact">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1585515320310-259814833e62?w=200&h=200&fit=crop" alt="Bosch Blender">
+                        </div>
+                        <h5><a href="#">Bosch MS64M6170</a></h5>
+                        <span class="product-cat">Blenders</span>
+                        <span class="price">100.00 ر.ع.</span>
+                    </div>
+                    <div class="product-card compact">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=200&h=200&fit=crop" alt="Bosch Dishwasher">
+                        </div>
+                        <h5><a href="#">Bosch Serie 2 SMV2ITX18G</a></h5>
+                        <span class="product-cat">Dishwashers</span>
+                        <span class="price">520.00 ر.ع.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PS5 Games Banner -->
+        <section class="ps5-section">
+            <div class="container ps5-layout">
+                <div class="ps5-banner" id="ps5-banner">
+                    <h3>Get discount<br>on PS5 games</h3>
+                    <a href="#" class="btn btn-outline-white">Buy Now</a>
+                    <div class="ps5-images">
+                        <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=200&h=280&fit=crop" alt="PS5 Games">
+                    </div>
+                </div>
+                <div class="ps5-products">
+                    <div class="product-card" id="product-cyberpunk">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=200&h=260&fit=crop" alt="Cyberpunk 2077">
+                        </div>
+                        <h5><a href="#">Cyberpunk 2077</a></h5>
+                        <span class="product-cat">Games</span>
+                        <span class="price">60.00 ر.ع.</span>
+                    </div>
+                    <div class="product-card" id="product-horizon">
+                        <span class="badge hot">HOT</span>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=200&h=260&fit=crop" alt="Horizon Zero Dawn">
+                        </div>
+                        <h5><a href="#">Horizon Zero Dawn</a></h5>
+                        <span class="product-cat">Games</span>
+                        <span class="price">39.00 ر.ع.</span>
+                    </div>
+                    <div class="product-card" id="product-mafia">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=200&h=260&fit=crop" alt="Mafia">
+                        </div>
+                        <h5><a href="#">Mafia: Definitive Edition</a></h5>
+                        <span class="product-cat">Games</span>
+                        <span class="price">60.00 ر.ع.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Last Articles + Latest Products + Top 100 -->
+        <section class="articles-section">
+            <div class="container articles-layout">
+                <aside class="last-articles" id="last-articles">
+                    <h4>Last articles</h4>
+                    <div class="article-item">
+                        <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=80&h=80&fit=crop" alt="Gaming Laptop">
+                        <div>
+                            <h5>Best Gaming Laptop Models</h5>
+                            <span class="article-date">November 22, 2024</span>
+                        </div>
+                    </div>
+                    <div class="article-item">
+                        <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=80&h=80&fit=crop" alt="HI-FI">
+                        <div>
+                            <h5>How to choose a HI-FI stereo</h5>
+                            <span class="article-date">November 14, 2024</span>
+                        </div>
+                    </div>
+                    <div class="article-item">
+                        <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=80&h=80&fit=crop" alt="Logitech">
+                        <div>
+                            <h5>Logitech POP Keys</h5>
+                            <span class="article-date">November 11, 2024</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Product Showcase (Cat Tent) -->
+                <div class="product-showcase" id="product-showcase">
+                    <div class="showcase-card">
+                        <span class="badge discount">-25%</span>
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop" alt="Cat Tent" class="showcase-img">
+                        <h5>Cat Teetee Tent</h5>
+                        <span class="product-cat">Textiles</span>
+                        <div class="showcase-price">
+                            <span class="price-old">92.00 ر.ع.</span>
+                            <span class="price">69.00 ر.ع.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top 100 Appliances -->
+                <div class="top-appliances" id="top-appliances">
+                    <div class="section-header">
+                        <h4>Top 100 appliances</h4>
+                        <a href="#" class="shop-more">Shop More</a>
+                    </div>
+                    <div class="top-grid">
+                        <div class="top-item">
+                            <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=60&h=60&fit=crop" alt="Apple">
+                            <div><strong>Apple</strong><span class="price">880.00 ر.ع.</span></div>
+                        </div>
+                        <div class="top-item">
+                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=60&h=60&fit=crop" alt="Apple">
+                            <div><strong>Apple</strong><span class="price">1,299.00 – 1,499.00 ر.ع.</span></div>
+                        </div>
+                        <div class="top-item">
+                            <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=60&h=60&fit=crop" alt="Apple">
+                            <div><strong>Apple</strong><span class="price">3,499.00 – 3,999.00 ر.ع.</span></div>
+                        </div>
+                        <div class="top-item">
+                            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=60&h=60&fit=crop" alt="Apple">
+                            <div><strong>Apple</strong><span class="price">2,499.00 – 2,999.00 ر.ع.</span></div>
+                        </div>
+                        <div class="top-item">
+                            <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=60&h=60&fit=crop" alt="ASUS">
+                            <div><strong>ASUS</strong><span class="price">1,600.00 ر.ع.</span></div>
+                        </div>
+                        <div class="top-item">
+                            <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=60&h=60&fit=crop" alt="ASUS">
+                            <div><strong>ASUS</strong><span class="price">2,320.00 ر.ع.</span></div>
+                        </div>
+                        <div class="top-item">
+                            <img src="https://images.unsplash.com/photo-1585515320310-259814833e62?w=60&h=60&fit=crop" alt="Bamix">
+                            <div><strong>Bamix</strong><span class="price">605.00 ر.ع.</span></div>
+                        </div>
+                        <div class="top-item">
+                            <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=60&h=60&fit=crop" alt="Bosch">
+                            <div><strong>Bosch</strong><span class="price">745.00 ر.ع.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Products Sidebar -->
+        <section class="latest-products-section">
+            <div class="container">
+                <aside class="latest-products" id="latest-products">
+                    <h4>Latest products</h4>
+                    <div class="recent-item">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=70&h=70&fit=crop" alt="HP ProBook">
+                        <div>
+                            <span class="recent-cat">HP ProBook 430 G8</span>
+                            <span class="price">1,420.00 ر.ع.</span>
+                        </div>
+                    </div>
+                    <div class="recent-item">
+                        <img src="https://images.unsplash.com/photo-1585515320310-259814833e62?w=70&h=70&fit=crop" alt="Tefal">
+                        <div>
+                            <span class="recent-cat">Tefal SV8055E0</span>
+                            <span class="price">220.00 ر.ع.</span>
+                        </div>
+                    </div>
+                    <div class="recent-item">
+                        <img src="https://images.unsplash.com/photo-1585515320310-259814833e62?w=70&h=70&fit=crop" alt="Tefal">
+                        <div>
+                            <span class="recent-cat">Tefal PERFECTMIX</span>
+                            <span class="price">120.00 ر.ع.</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Shop by Categories -->
+        <section class="categories-section">
+            <div class="container">
+                <h3>Shop by categories</h3>
+                <div class="categories-scroll" id="categories-scroll">
+                    <a href="#" class="category-circle">
+                        <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=100&h=100&fit=crop" alt="Washer dryers">
+                        <span>Washer dryers</span>
+                    </a>
+                    <a href="#" class="category-circle">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=100&h=100&fit=crop" alt="Vacuum Cleaners">
+                        <span>Vacuum Cleaners</span>
+                    </a>
+                    <a href="#" class="category-circle">
+                        <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=100&h=100&fit=crop" alt="Ultrabook">
+                        <span>Ultrabook</span>
+                    </a>
+                    <a href="#" class="category-circle">
+                        <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=100&h=100&fit=crop" alt="Toys">
+                        <span>Toys</span>
+                    </a>
+                    <a href="#" class="category-circle">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=100&h=100&fit=crop" alt="Textiles">
+                        <span>Textiles</span>
+                    </a>
+                    <a href="#" class="category-circle">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=100&h=100&fit=crop" alt="Small kitchen">
+                        <span>Small kitchen appliances</span>
+                    </a>
+                    <a href="#" class="category-circle">
+                        <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=100&h=100&fit=crop" alt="Refrigeration">
+                        <span>Refrigeration</span>
+                    </a>
+                    <a href="#" class="category-circle">
+                        <img src="https://images.unsplash.com/photo-1585515320310-259814833e62?w=100&h=100&fit=crop" alt="Ovens">
+                        <span>Ovens</span>
+                    </a>
+                    <a href="#" class="category-circle">
+                        <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=100&h=100&fit=crop" alt="Mom Baby">
+                        <span>Mom & Baby</span>
+                    </a>
+                    <a href="#" class="category-circle">
+                        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=100&h=100&fit=crop" alt="Mobile">
+                        <span>Mobile & Accessories</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Cards -->
+        <section class="promo-cards-section">
+            <div class="container promo-cards-grid">
+                <div class="promo-card" id="promo-adventure">
+                    <div class="promo-card-img">
+                        <img src="https://images.unsplash.com/photo-1546868871-af0de0ae72be?w=400&h=250&fit=crop" alt="Watch">
+                    </div>
+                    <h4>Next level adventure</h4>
+                    <p>A magical new way to use your watch without touching the screen. The brightest Apple display ever.</p>
+                    <a href="#" class="btn btn-primary">Shop Now</a>
+                </div>
+                <div class="promo-card dark" id="promo-hearth">
+                    <div class="promo-card-img">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=250&fit=crop" alt="Chair">
+                    </div>
+                    <h4>Hearth loft series</h4>
+                    <p>The expansive proportions of the seating's surface, combined with the soft, curved arms create the ideal gwen for relaxation</p>
+                    <a href="#" class="btn btn-primary">Shop Now</a>
+                </div>
+                <div class="promo-card" id="promo-hairdryer">
+                    <div class="promo-card-img">
+                        <img src="https://images.unsplash.com/photo-1522338242992-e1a54571a36a?w=400&h=250&fit=crop" alt="Hair Dryer">
+                    </div>
+                    <h4>Hair dryer blue blush</h4>
+                    <p>Finished in Blue Blush, cushioned with soft fabric and with a removable lid that is also a non-slip mat for your hair dryer.</p>
+                    <a href="#" class="btn btn-primary">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Recommended Products -->
+        <section class="recommended-section">
+            <div class="container">
+                <h3>More recommended products</h3>
+                <div class="products-grid wide" id="recommended-grid">
+                    <div class="product-card">
+                        <div class="product-image"><img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=200&h=200&fit=crop" alt="MacBook Air"></div>
+                        <h5><a href="#">Apple MacBook Air 13" M1</a></h5>
+                        <span class="product-cat">Apple MacBook</span>
+                        <span class="price">880.00 ر.ع.</span>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=200&h=200&fit=crop" alt="MacBook Pro"></div>
+                        <h5><a href="#">Apple MacBook Pro 13" M2</a></h5>
+                        <span class="product-cat">Apple MacBook</span>
+                        <span class="price">1,299.00 – 1,499.00 ر.ع.</span>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image"><img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=200&h=200&fit=crop" alt="MacBook Pro 16"></div>
+                        <h5><a href="#">Apple MacBook Pro 16″ M1 Max</a></h5>
+                        <span class="product-cat">Apple MacBook</span>
+                        <span class="price">3,499.00 – 3,999.00 ر.ع.</span>
+                    </div>
+                    <div class="product-card">
+                        <span class="badge hot">HOT</span>
+                        <div class="product-image"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=200&h=200&fit=crop" alt="MacBook Pro 16 Pro"></div>
+                        <h5><a href="#">Apple MacBook Pro 16″ M1 Pro</a></h5>
+                        <span class="product-cat">Apple MacBook</span>
+                        <span class="price">2,499.00 – 2,999.00 ر.ع.</span>
+                    </div>
+                    <div class="product-card">
+                        <span class="badge hot">HOT</span>
+                        <div class="product-image"><img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=200&h=200&fit=crop" alt="ASUS ZenBook"></div>
+                        <h5><a href="#">ASUS ZenBook OLED 13</a></h5>
+                        <span class="product-cat">Business Laptop</span>
+                        <span class="price">1,600.00 ر.ع.</span>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image"><img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=200&h=200&fit=crop" alt="ASUS ZenBook Pro"></div>
+                        <h5><a href="#">ASUS ZenBook Pro 15 Flip</a></h5>
+                        <span class="product-cat">Ultrabook</span>
+                        <span class="price">2,320.00 ر.ع.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Online Store Description -->
+        <section class="store-description">
+            <div class="container">
+                <h3>Online store of household appliances and electronics</h3>
+                <p>Then the question arises: where's the content? Not there yet? That's not so bad, there's dummy copy to the rescue. But worse, what if the fish doesn't fit in the can, the foot's to big for the boot? Or to small? To short sentences, to many headings, images too large for the proposed design, or too small, or they fit in but it looks iffy for reasons.</p>
+                <p>A client that's unhappy for a reason is a problem, a client that's unhappy though he or her can't quite put a finger on it is worse. Chances are there wasn't collaboration, communication, and checkpoints.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <!-- ===== PAYMENT SYSTEM SECTION (NEW) ===== -->
+        <section class="payment-section" id="payment-section">
+            <div class="container">
+                <div class="payment-header">
+                    <h3><i class="fas fa-credit-card"></i> Secure Payment System</h3>
+                    <p class="payment-subtitle">Complete your purchase with our safe and secure payment options</p>
+                </div>
+
+                <!-- Payment Procedures -->
+                <div class="payment-procedures" id="payment-procedures">
+                    <h4>How to Make a Payment</h4>
+                    <div class="procedure-steps">
+                        <div class="step" id="step-1">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h5>Add to Cart</h5>
+                                <p>Browse products and add items to your shopping cart</p>
+                                <i class="fas fa-shopping-cart step-icon"></i>
+                            </div>
+                        </div>
+                        <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+                        <div class="step" id="step-2">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h5>Review Order</h5>
+                                <p>Check your items, quantities and total amount</p>
+                                <i class="fas fa-clipboard-list step-icon"></i>
+                            </div>
+                        </div>
+                        <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+                        <div class="step" id="step-3">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h5>Enter Details</h5>
+                                <p>Fill in shipping address and contact info</p>
+                                <i class="fas fa-address-card step-icon"></i>
+                            </div>
+                        </div>
+                        <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+                        <div class="step" id="step-4">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h5>Make Payment</h5>
+                                <p>Enter card details and confirm payment securely</p>
+                                <i class="fas fa-lock step-icon"></i>
+                            </div>
+                        </div>
+                        <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+                        <div class="step" id="step-5">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h5>Order Confirmed</h5>
+                                <p>Receive confirmation and track your delivery</p>
+                                <i class="fas fa-check-circle step-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Payment Form -->
+                <div class="payment-form-container" id="payment-form-container">
+                    <div class="payment-form-card">
+                        <div class="card-visual" id="card-visual">
+                            <div class="card-chip"></div>
+                            <div class="card-brand"><i class="fab fa-cc-visa"></i></div>
+                            <div class="card-number-display">•••• •••• •••• ••••</div>
+                            <div class="card-bottom">
+                                <div>
+                                    <span class="card-label">CARD HOLDER</span>
+                                    <span class="card-holder-display">YOUR NAME</span>
+                                </div>
+                                <div>
+                                    <span class="card-label">EXPIRES</span>
+                                    <span class="card-expiry-display">MM/YY</span>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="payment-form" id="payment-form" onsubmit="return false;">
+                            <div class="form-group">
+                                <label for="card-number">Card Number</label>
+                                <div class="input-with-icon">
+                                    <i class="far fa-credit-card"></i>
+                                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="card-holder">Card Holder Name</label>
+                                <div class="input-with-icon">
+                                    <i class="far fa-user"></i>
+                                    <input type="text" id="card-holder" placeholder="John Doe">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="card-expiry">Expiry Date</label>
+                                    <div class="input-with-icon">
+                                        <i class="far fa-calendar-alt"></i>
+                                        <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="card-cvv">CVV</label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <input type="text" id="card-cvv" placeholder="•••" maxlength="3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="billing-address">Billing Address</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <input type="text" id="billing-address" placeholder="123 Main Street, City">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="billing-zip">Zip Code</label>
+                                    <input type="text" id="billing-zip" placeholder="12345" maxlength="10">
+                                </div>
+                                <div class="form-group">
+                                    <label for="billing-country">Country</label>
+                                    <select id="billing-country">
+                                        <option value="">Select Country</option>
+                                        <option value="np">Nepal</option>
+                                        <option value="us">United States</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="om">Oman</option>
+                                        <option value="in">India</option>
+                                        <option value="au">Australia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="payment-total">
+                                <div class="total-row"><span>Subtotal:</span><span>0.00 ر.ع.</span></div>
+                                <div class="total-row"><span>Shipping:</span><span>Free</span></div>
+                                <div class="total-row"><span>Tax:</span><span>0.00 ر.ع.</span></div>
+                                <div class="total-row total-final"><span>Total:</span><span>0.00 ر.ع.</span></div>
+                            </div>
+                            <button type="submit" class="btn btn-pay" id="pay-now-btn">
+                                <i class="fas fa-lock"></i> Pay Now – 0.00 ر.ع.
+                            </button>
+                            <div class="payment-badges">
+                                <span class="secure-badge"><i class="fas fa-shield-alt"></i> SSL Secured</span>
+                                <span class="secure-badge"><i class="fas fa-lock"></i> 256-bit Encryption</span>
+                                <span class="secure-badge"><i class="fas fa-check-circle"></i> PCI Compliant</span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Accepted Payment Methods -->
+                    <div class="accepted-methods">
+                        <h5>Accepted Payment Methods</h5>
+                        <div class="method-cards">
+                            <div class="method-card"><i class="fab fa-cc-visa"></i><span>Visa</span></div>
+                            <div class="method-card"><i class="fab fa-cc-mastercard"></i><span>Mastercard</span></div>
+                            <div class="method-card"><i class="fab fa-cc-paypal"></i><span>PayPal</span></div>
+                            <div class="method-card"><i class="fab fa-cc-amex"></i><span>Amex</span></div>
+                            <div class="method-card"><i class="fab fa-cc-stripe"></i><span>Stripe</span></div>
+                            <div class="method-card"><i class="fab fa-google-pay"></i><span>Google Pay</span></div>
+                            <div class="method-card"><i class="fab fa-cc-apple-pay"></i><span>Apple Pay</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="container footer-top-inner">
+                <a href="#" class="logo footer-logo" id="footer-logo">
+                    <span class="logo-galaxy">Gal</span><span class="logo-axy">axy</span>
+                    <span class="logo-sub">online.store</span>
+                </a>
+                <div class="social-links" id="social-links">
+                    <span>Social Links</span>
+                    <a href="#" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon tw"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon ig"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon yt"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon pi"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Main -->
+        <div class="footer-main">
+            <div class="container footer-grid">
+                <div class="footer-col" id="footer-know-us">
+                    <h4>Get to Know Us</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Our Partners</a>
+                    <a href="#">Work With Us</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="footer-col" id="footer-shop">
+                    <h4>Shop</h4>
+                    <a href="#">Recently Viewed</a>
+                    <a href="#">Featured Products</a>
+                    <a href="#">Top 100 Appliances</a>
+                    <a href="#">Laptops</a>
+                    <a href="#">Toys & Games</a>
+                </div>
+                <div class="footer-col" id="footer-useful">
+                    <h4>Useful Links</h4>
+                    <a href="#">Track Order</a>
+                    <a href="#">Latest News</a>
+                    <a href="#">Purchase Theme</a>
+                    <a href="admin.html" style="color: var(--accent-blue); font-weight: 600;"><i class="fas fa-lock"></i> Admin Panel</a>
+                </div>
+                <div class="footer-newsletter" id="footer-newsletter">
+                    <h4 class="newsletter-title">Subscribe Newsletter</h4>
+                    <p>Join our mailing list to receive any latest updates and promotions.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address" id="newsletter-email">
+                        <button class="btn btn-subscribe" id="subscribe-btn">Subscribe</button>
+                    </div>
+
+                    <div class="safety-payments">
+                        <h5><i class="fas fa-lock"></i> Safety Payments</h5>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-stripe"></i>
+                            <i class="fab fa-google-pay"></i>
+                            <i class="fab fa-cc-apple-pay"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Galaxy Biz. Developed by <a href="#">Webbank Nepal</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scroll-top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
